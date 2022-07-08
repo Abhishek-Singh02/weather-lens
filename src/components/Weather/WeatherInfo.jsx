@@ -1,7 +1,6 @@
 import React , {useEffect} from "react";
 import styles from "./WeatherInfo.module.css";
 import { useData } from "../../Hooks/useData";
-var currentTime
 
 const WeatherInfo = () => {
   const { data ,foreCastData, localTime } = useData();

@@ -5,7 +5,6 @@ import WeatherInfo from "../Weather/WeatherInfo";
 import Info from "../Info/Info";
 import Dayscarousel from "../Dayscarousel/Dayscarousel";
 import { DataProvider } from "../../weatherData";
-import Footer from "../Footer/Footer"
 
 
 // import styles from "./App.module.css"
