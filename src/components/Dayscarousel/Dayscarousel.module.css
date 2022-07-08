@@ -1,0 +1,33 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 5rem 4rem 5rem;
+  align-items: center;
+  gap: 1rem;
+}
+.line {
+  width: 85%;
+  height: 5px;
+  background-color: #fff;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .nothidden {
+    display: none;
+  }
+  .hidden {
+    display:flex;
+    margin:1rem 0 10vh 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media only screen and (min-width:651px) and (max-width:1200px){
+  .carousel{
+    margin-top: 0rem;
+    margin-right: 6rem;
+  }
+}

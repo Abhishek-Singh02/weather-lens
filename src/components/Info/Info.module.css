@@ -1,0 +1,35 @@
+.details{
+  display: flex;
+  flex-direction: column;
+  gap:2rem
+}
+.hidden{
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  .hidden span{
+    animation: none;
+    width: 120%;
+  }
+  
+  .caritem{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+
+  }
+  .details{
+    width: 100%;
+  }
+  span::before{
+    display: none;
+  }
+  .nothidden{
+    display: none;
+  }
+  .hidden{
+    display:contents;
+  }
+}
