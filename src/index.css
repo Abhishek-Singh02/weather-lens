@@ -31,10 +31,10 @@ body{
 }
 
 .carousel-control-next{
-  right: -25px;
+  right: -1.5rem;
 }
 .carousel-control-prev{
-  left: -70px;
+  left: -4.3rem;
 }
 .carousel-indicators{
   position: absolute;
@@ -63,7 +63,7 @@ body{
 
 }
 .Dayscarousel_hidden__SVPHG a.carousel-control-prev{
-  margin-left: 3rem;
+  margin-left: 3.8rem;
 
 }
 div.active.carousel-item{
