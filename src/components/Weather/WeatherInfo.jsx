@@ -7,7 +7,7 @@ const WeatherInfo = () => {
   if (localTime !== null) {
     var lTime = localTime.datetime
     var event = new Date(lTime);
-    event.setMinutes(event.getMinutes() - 2.8);
+    event.setMinutes(event.getMinutes() - 0.5);
     var currentTime = event.toLocaleTimeString("en-US");
     console.log(currentTime);
   }
