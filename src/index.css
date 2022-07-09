@@ -30,15 +30,9 @@ body{
   
 }
 
-.carousel-control-next{
-  right: -1.5rem;
-}
-.carousel-control-prev{
-  left: -4.3rem;
-}
 .carousel-indicators{
   position: absolute;
-  margin: 0 auto;
+  margin: 0 0;
   width: 100%;
   bottom: -10px;
   gap:0.5rem;
@@ -48,29 +42,19 @@ body{
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap:0
 }
- .Dayscarousel_hidden__SVPHG span{
-  animation: none;
-}
-.carousel{
-  padding: 0;
-  width: 100%;
-}
-.Dayscarousel_hidden__SVPHG a.carousel-control-next{
-  margin-right: 3rem;
-
-}
-.Dayscarousel_hidden__SVPHG a.carousel-control-prev{
-  margin-left: 3.8rem;
-
-}
-div.active.carousel-item{
-  width: 100%;
-  margin: 0;
-}
-
  a span{
   animation: none;
+ }
+
+ .Dayscarousel_hidden__SVPHG .carousel-inner{
+  width: 15.5rem;
+ }
+ .carousel-control-prev{
+  left: -3rem;
+ }
+ .carousel-control-next{
+  right: -1rem;
  }

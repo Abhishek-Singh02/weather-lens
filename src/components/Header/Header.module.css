@@ -72,8 +72,8 @@ a{
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
    }
-   .logo{
-    gap: 0;
+   a{
+    gap: 0.3rem;
    }
    .logo img{
     transform: scale(0.6);

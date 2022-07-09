@@ -8,17 +8,11 @@
 }
 
 @media only screen and (max-width: 650px){
-  .hidden span{
-    animation: none;
-    width: 120%;
-  }
-  
+ 
   .caritem{
     display: flex;
     justify-content: space-around;
     width: 100%;
-
-
   }
   .details{
     width: 100%;
