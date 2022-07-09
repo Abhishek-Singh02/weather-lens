@@ -8,7 +8,7 @@ Weather is sometimes difficult to predict. This accurate weather app allows to f
 - Wind speed and direction
 - Pressure and precipitation information 
 - Local time
--and much more...
+- And much more...
 
 ### Live-Preview
 [Click Here to View Live Preview](https://try-weather-lens.vercel.app/)
