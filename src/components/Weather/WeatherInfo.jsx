@@ -57,8 +57,8 @@ const WeatherInfo = () => {
       return (
         <div className={styles.flex}>
           <img
-            src={"/Icons/" + data.weather[0].icon + ".svg"}
-            alt="weather_icons"
+            src={"/images/icons/" + data.weather[0].icon + ".svg"}
+            alt="weather_icon"
             height={100}
             width={100}
           />
