@@ -33,11 +33,9 @@ body{
 .carousel-indicators{
   position: absolute;
   margin: 0 0;
-  width: 100%;
   bottom: -10px;
   gap:0.5rem;
-}
-.Info_hidden__XARir .carousel-indicators [data-bs-target]{
+}.carousel-indicators [data-bs-target]{
   width: 10rem;
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active{
@@ -48,8 +46,7 @@ body{
  a span{
   animation: none;
  }
-
- .Dayscarousel_hidden__SVPHG .carousel-inner{
+.carousel-inner{
   width: 15.5rem;
  }
  .carousel-control-prev{
