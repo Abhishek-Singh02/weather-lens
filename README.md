@@ -11,7 +11,7 @@ Weather is sometimes difficult to predict. This accurate weather app allows to f
 -and much more...
 
 ### Live-Preview
-[Click Here to View Live Preview](https://amanovishnu.github.io/Weather-App/index.html)
+[Click Here to View Live Preview](https://try-weather-lens.vercel.app/)
 
 ### Preview
 ![weather](https://user-images.githubusercontent.com/102522318/178114881-6ca29ce2-3bb9-4c6c-8450-df13dae2e7dd.png)
