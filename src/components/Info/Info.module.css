@@ -1,29 +1,30 @@
-.details{
+.details {
   display: flex;
   flex-direction: column;
-  gap:2rem
+  gap: 2rem;
 }
-.hidden{
+.hidden {
   display: none;
 }
 
-@media only screen and (max-width: 650px){
- 
-  .caritem{
+@media only screen and (max-width: 650px) {
+  .caritem {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    gap: 2.4rem;
+    padding-left: 1.2rem;
   }
-  .details{
+  .details {
     width: 100%;
   }
-  span::before{
+  span::before {
     display: none;
   }
-  .nothidden{
+  .nothidden {
     display: none;
   }
-  .hidden{
-    display:contents;
+  .hidden {
+    display: contents;
   }
 }
