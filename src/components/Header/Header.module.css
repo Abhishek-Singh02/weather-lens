@@ -1,86 +1,87 @@
-
-a{
-    text-decoration: none;
-    display: flex;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end   ;
-    gap:1rem;
+a {
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
 }
-.header{
-    position: relative;
-    margin: 2rem 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  position: relative;
+  margin: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header h1{
-    font-size: 2rem;
-    color: white;
-}
-
-::placeholder{
-    color: whitesmoke;
-}
-.header input{
-    color: whitesmoke;
-    background-color: transparent;
-    padding:0.3rem;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    outline: 0;
-    border-width: 0 0 0.1rem;
-    border-color: white;
-    width: 15rem;
-}
-.header input:focus{
-    border: none;
-    border-radius: 5px;
-    background: rgba(255,255,255,0.05);
+.header h1 {
+  font-size: 2rem;
+  color: white;
 }
 
-.header button{
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color: white;
-    transform: scale(1.3);
-    position: absolute;
-    right: 0.2rem;
-    bottom: 0.6rem;
-    width: 2.5rem;
+::placeholder {
+  color: whitesmoke;
 }
-.input{
-    position: relative;
+.header input {
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 0.3rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  outline: 0;
+  border-width: 0 0 0.1rem;
+  border-color: white;
+  width: 15rem;
 }
-.header button:hover{
+.header input:focus {
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.header button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  transform: scale(1.3);
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.6rem;
+  width: 2.5rem;
+}
+.input {
+  position: relative;
+}
+@media (hover: hover) {
+  .header button:hover {
     transform: scale(1.5);
+  }
 }
 @media only screen and (max-width: 650px) {
-   .header{
+  .header {
     margin: 0;
     padding: 0.2rem 1rem 1rem 1rem;
-   }
-   .header input{
+  }
+  .header input {
     font-size: 0.8rem;
     width: 7.5rem;
     margin-right: 1rem;
     padding: 0;
-   }
-   .logo h1{
+  }
+  .logo h1 {
     margin-left: -0.5rem;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
-   }
-   a{
+  }
+  a {
     gap: 0.3rem;
-   }
-   .logo img{
+  }
+  .logo img {
     transform: scale(0.6);
-   }
-   .header button{
+  }
+  .header button {
     right: 0rem;
     bottom: -0.01rem;
     transform: scale(0.7);
-   }
+  }
 }
