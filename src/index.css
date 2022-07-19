@@ -47,7 +47,7 @@ body {
 a span {
   animation: none;
 }
-.carousel-inner {
+#day .carousel-inner {
   width: 15.5rem;
 }
 .carousel-control-prev {

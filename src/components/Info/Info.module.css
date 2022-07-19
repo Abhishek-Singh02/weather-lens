@@ -11,9 +11,9 @@
   .caritem {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    gap: 2.4rem;
-    padding-left: 1.2rem;
+    gap: 3%;
   }
   .details {
     width: 100%;
