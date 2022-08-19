@@ -27,7 +27,7 @@ const Info = () => {
             <Carousel.Item>
               <div className={styles.caritem}>
                 <Details title="Wind Speed" value={data.wind.speed + " Km/h"} />
-                <Details title="Chance of Precipation" value={(foreCastData.daily[0].pop * 100).toPrecision(2) + " %"} />
+                <Details title="Chance of Precipation" value={Math.round(foreCastData.daily[0].pop * 100) + " %"} />
               </div>
             </Carousel.Item>
           </Carousel>
