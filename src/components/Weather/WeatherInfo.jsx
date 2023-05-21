@@ -38,7 +38,7 @@ const WeatherInfo = () => {
   if (data !== null && foreCastData !== null && localTime !== null) {
     return (
       <div className={styles.flex}>
-        <img src={"/Icons/" + data.weather[0].icon + ".svg"} alt="weather_icon" height={100} width={100} />
+        <img preload src={"/Icons/" + data.weather[0].icon + ".svg"} alt="weather_icon" height={100} width={100} />
         <h3>{data.weather[0].description}</h3>
         <h1>{(data.main.temp - 273.5).toPrecision(3)}° C</h1>
         <h2>

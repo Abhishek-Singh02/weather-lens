@@ -22,7 +22,7 @@ export function DataProvider({ children }) {
 
           data &&
             setURL3(
-              `https://timezone.abstractapi.com/v1/current_time/?api_key=7556dbc9febf41128a662fa6e6b0c7cc&location=${
+              `https://timezone.abstractapi.com/v1/current_time/?api_key=6bb6954643354d88ad5f7c892e1ebcb4&location=${
                 data && data.coord.lat
               },${data && data.coord.lon}`
             );

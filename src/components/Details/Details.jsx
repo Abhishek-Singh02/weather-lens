@@ -5,7 +5,7 @@ const Details = (props) =>{
   const icon = props.title
     return (
       <div className={styles.details}>
-        <img src={`/Icons/${icon}.svg`} width={35} height={35} alt="" />
+        <img preload src={`/Icons/${icon}.svg`} width={35} height={35} alt="" />
         <div className={styles.info}>
           <h3>{props.title}</h3>
           <h1>{props.value}</h1>

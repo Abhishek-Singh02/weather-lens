@@ -11,7 +11,7 @@ const Header = () =>{
        <div className={styles.header}>
          <div className={styles.logo}>
            <a href="/">
-             <img src="/images/logo.svg" alt="" height={50} width={50} />
+             <img preload src="/images/logo.svg" alt="" height={50} width={50} />
              <h1>WeatherLens</h1>
            </a>
          </div>
