@@ -1,40 +1,54 @@
-import { createContext, useEffect, useState } from "react"
-import { useFetch } from "./Hooks/useFetch"
+import { createContext, useEffect, useState } from "react";
+import { useFetch } from "./Hooks/useFetch";
 
-export const DataContext = createContext()
+export const DataContext = createContext();
 
 export function DataProvider({ children }) {
+  const OW_API_KEY = process.env.REACT_APP_OW_API_KEY;
+  const TZ_API_KEY = process.env.REACT_APP_TZ_API_KEY;
 
+  const [url, setURL] = useState(
+    `https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=${OW_API_KEY}`,
+  );
 
-    const [url, setURL] = useState(
-      `https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=3bce4b93d8b9662fb50a58f4f0945ad1`
-    );
+  const { data, loading, error } = useFetch(url);
 
-    const { data, loading, error } = useFetch(url)
+  const [url2, setURL2] = useState(null);
+  // const [url3, setURL3] = useState(null);
+  useEffect(() => {
+    data &&
+      setURL2(
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${
+          data && data.coord.lat
+        }&lon=${
+          data && data.coord.lon
+        }&exclude=hourly,minutely&appid=${OW_API_KEY}`,
+      );
 
-    const [url2, setURL2] = useState(null)
-    const [url3, setURL3] = useState(null)
-    useEffect(() => {
-        data &&
-          setURL2(
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${data && data.coord.lat }&lon=${data && data.coord.lon }&exclude=hourly,minutely&appid=3bce4b93d8b9662fb50a58f4f0945ad1`
-          );
+    // data &&
+    //   setURL3(
+    //     `https://timezone.abstractapi.com/v1/current_time/?api_key=${TZ_API_KEY}&location=${
+    //       data && data.coord.lon
+    //     },${data && data.coord.lat}`,
+    //   );
+  }, [data]);
 
-          data &&
-            setURL3(
-              `https://timezone.abstractapi.com/v1/current_time/?api_key=6bb6954643354d88ad5f7c892e1ebcb4&location=${
-                data && data.coord.lat
-              },${data && data.coord.lon}`
-            );
-    }, [data])
+  const { data: foreCastData } = useFetch(url2);
 
-    const { data: foreCastData} = useFetch(url2)
+  // const { data: localTime } = useFetch(url3);
 
-    const {data:localTime}= useFetch(url3)
-
-    return(
-        <DataContext.Provider value={{ data, foreCastData, loading, error, setURL ,localTime }}>
-            { children }
-        </DataContext.Provider>
-    )
+  return (
+    <DataContext.Provider
+      value={{
+        data,
+        foreCastData,
+        loading,
+        error,
+        setURL,
+        localTime: new Date(),
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
 }

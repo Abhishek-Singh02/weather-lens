@@ -27,16 +27,14 @@ export const useFetch = (url) => {
         } else {
           setLoading(false);
           console.log("Could not fetch the data");
-          setError(err)
+          setError(err);
         }
       }
     };
 
     fetchData();
 
-    return () => {
-      controller.abort();
-    };
+    return () => {};
   }, [url]);
 
   return { data, loading, error };
